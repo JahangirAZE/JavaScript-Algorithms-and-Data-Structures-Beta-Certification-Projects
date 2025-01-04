@@ -1,0 +1,292 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Project styling */
+body {
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #1b1b32;
+  color: #0a0a23;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.freecodecamp-logo {
+  height: 30px;
+  margin: 25px 0;
+}
+
+h1 {
+  color: #f5f6f7;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin: 25px auto;
+  background-color: #f5f6f7;
+  border: 1px solid #f5f6f7;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.output,
+#search-form {
+  display: flex;
+  justify-content: center;
+}
+
+#search-form {
+  flex-wrap: wrap;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  gap: 10px;
+  background-color: #f0f1f7;
+}
+
+label {
+  align-self: center;
+  font-weight: bold;
+  color: #333;
+}
+
+#search-input {
+  height: 40px;
+  padding-left: 10px;
+  width: 70%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#search-button {
+  padding: 10px 0;
+  width: 80px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #7f21ab;
+  color: #f5f6f7;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#search-button:hover {
+  background-color: #5e1782;
+}
+
+.output {
+  margin: 15px 0;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-container,
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 325px;
+}
+
+.top-container {
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #f0f1f7;
+  border-radius: 10px;
+}
+
+.name-and-id {
+  height: 28px;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.size {
+  height: 22px;
+  font-size: 0.9rem;
+}
+
+.sprite-container {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sprite {
+  width: 150px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+#types {
+  min-height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.type {
+  width: 75px;
+  padding: 5px;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: red;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1rem;
+  color: #f5f6f7;
+  background-color: #7f21ab;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 10px;
+}
+
+tr:nth-child(odd) {
+  background-color: #6b1a91;
+}
+
+tr:nth-child(even) {
+  background-color: #7f21ab;
+}
+
+th:nth-child(even),
+td:nth-child(even) {
+  border-left: 5px solid #f5f6f7;
+}
+
+tr {
+  border-bottom: 5px solid #f5f6f7;
+}
+
+/* Special styling for Pokémon types */
+.normal {
+  background-color: #b7b7aa;
+}
+
+.fire {
+  background-color: #ff6f52;
+}
+
+.water {
+  background-color: #42a1ff;
+}
+
+.electric {
+  background-color: #fecc33;
+}
+
+.grass {
+  background-color: #78cc55;
+}
+
+.ice {
+  background-color: #66ccfe;
+}
+
+.fighting {
+  background-color: #d3887e;
+}
+
+.poison {
+  background-color: #c68bb7;
+}
+
+.ground {
+  background-color: #dfba52;
+}
+
+.flying {
+  background-color: #8899ff;
+}
+
+.psychic {
+  background-color: #ff66a3;
+}
+
+.bug {
+  background-color: #aabb23;
+}
+
+.rock {
+  background-color: #baaa66;
+}
+
+.ghost {
+  background-color: #9995d0;
+}
+
+.dragon {
+  background-color: #9e93f1;
+}
+
+.dark {
+  background-color: #b59682;
+}
+
+.steel {
+  background-color: #abaabb;
+}
+
+.fairy {
+  background-color: #ed99ed;
+}
+
+@media screen and (min-width: 550px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 500px;
+  }
+
+  #search-form,
+  .top-container,
+  .bottom-container {
+    width: 100%;
+  }
+
+  .type {
+    width: 85px;
+  }
+}
